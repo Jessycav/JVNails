@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    font-family: 'Montserrat';
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+hr {
+    background: linear-gradient(90deg, #EAC500 0%, #E3712E 50.32%, #D9036A 100%);
+    width: 10px;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background: black;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: #D9036A;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.header .logo {
+    align-items: center;
+    padding: 10px;
+    margin-right: auto;
+    font-family: 'Fleur De Leah';
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(90deg, #EAC500 0%, #E3712E 43.43%, #D9036A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .navbar a {
+    display: inline-flex;
+    gap: 50px;  
+    font-family: 'MonteCarlo';
+    font-size: 40px;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    text-transform: capitalize; 
+}
+  
+.header .navbar a:hover {
+    color: #D9036A;
+}
+
+.header .icons i {
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    color:black;
+    background: #eee;
+    border-radius: 50%;
+    margin-left: 0.7rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.header .icons i:hover {
+    color: white;
+    background: #D9036A;
+}
+.header .search-form {
+    position: absolute;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    top: 75%;
+    right: 3%;
+    height: 16px;
+    width: 580px;
+    padding: 1rem;
+    display: none;
+}
+
+.header .search-form.active {
+    display: flex;
+}
+
+.header .search-form #search-box{
+    width: 100%;
+    border: 1px solid #D9036A;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: black;
+    height: 100%;
+}
+
+.header .search-form label {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    color: black;
+}
+
+.header .search-form label:hover {
+    color: #D9036A;
+}
+
+#menu-bars {
+    display: none;
+}
+
+.banner {
+    min-height: 100vh;
+    background: url(images/BanniereAccueil_RashidKhreiss.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    padding-top: 8rem;
+}
+
+.banner .content {
+    text-align: center;
+    background: #ffffff9a;
+    border-radius: 0.5rem;
+    box-shadow: #fff;
+    padding: 3rem;
+    max-width: 70rem;
+}
+
+.banner .content h2 {
+    font-size: 4rem;
+    color: #bc015b;
+    text-transform: uppercase;
+}
+
+.banner .content p {
+    font-size: 1.6rem;
+    color: #D9036A;
+    padding: 1rem 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1.5rem;
+    background: #eee;
+    
+}
+
+.container .posts-container .post {
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    border: #D9036A;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.container .posts-container .post .image {
+    height: 40rem;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.container .posts-container .post .date{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color:#D9036A;
+}
+
+.container .posts-container .post .title{
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color: #bc015b;
+}
+.container .posts-container .post .text {
+    color: black;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: .1rem 0;
+}
+
+.container .posts-container .links {
+    border-top: black;
+    margin-top: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .posts-container .links .user {
+    margin-right: auto;
+}
+
+.container .posts-container .links .icon {
+    padding-right: 1rem;
+}
+
+.container .posts-container .links a {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+.container .posts-container .links a i {
+    padding-right: 0.2rem;
+    color: #D9036A;
+}
+
+.container .posts-container .links a:hover {
+    color: #D9036A;
+}
+
+.container .posts-container .links a:hover i {
+    color: #D9036A;
+}
+
+.contact {
+   background: url(images/Background.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+.contact form {
+    background: #fff;
+    background-position: center;
+    box-shadow: #D9036A;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 50rem;
+    padding: 20px;   
+}
+
+.contact form h3 {
+    color: #bc015b;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-family: 'Montecarlo';
+    font-size: 60px;
+    text-transform: capitalize;
+}
+
+.contact form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea {
+    width: 100%;
+    background: #eee;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #D9036A;
+    font-size: 20px;
+}
+
+.contact form .inputBox input {
+    width: 49%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .container .box {
+    border: #D9036A;
+    border-radius: 10px;
+    background: #fff;
+
+}
+
+.footer .container .box .title {
+    padding: 10px;
+    font-family: 'Montecarlo';
+    font-size: 24px;
+    color:#D9036A;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.footer .container .box .about {
+    text-align: center;
+    margin: 10px;
+    padding: 10px 15px;
+}
+
+.footer .container .box .about img {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 5px 0;
+}
+
+.footer .container .box .about h4 {
+    color:#D9036A;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.footer.container .box .about p {
+    color:var(--light-color);
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.footer .credit {
+    text-transform: capitalize;
+    font-size: 12px;
+    color: black;
+    padding: 20px 0;
+}
+
+.footer .credit span{
+    color: #D9036A;
+}
+
+.footer .follow {
+    padding: 30px 0;
+}
+
+.footer .follow a {
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+.footer .follow a:hover {
+    background: #D9036A;
+}
+
+/* Media queries pour site responsive */
+@media (max-width:1230px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:1070px) {
+
+    #menu-bars {
+        display: inline-block;
+    }
+
+    .header .search-form {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        width: 100%;
+        border-radius: 0;
+        display: none;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        background: #fff;
+        display: none;
+    }
+
+    .header .navbar.active {
+        display: block;
+    }
+
+    .header .navbar a{
+        display: block;
+        background:#f7f7f7;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        border-radius: .5rem;
+        border: .1rem solid rgba(0,0,0,.2);
+    }
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .inputBox input {
+        width: 100%;
+    }
+
+}
